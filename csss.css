@@ -7,14 +7,17 @@ body, h1, h2, p, ul, li {
 
 /* Apply a more sophisticated font and background color to the entire page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, legible font */
-    background-color: #f0f0f0; /* Softer background color for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/6.jpg'); /* 添加淡化效果和背景图片 */
+    background-size: cover; /* 确保背景图片覆盖整个页面 */
+    background-position: center; /* 使背景图片居中显示 */
     color: #333;
-    line-height: 1.6; /* Improved line height for readability */
-    padding: 20px; /* Add padding to avoid content touching the edges */
-    max-width: 1200px; /* Limit the max width of the content for readability */
-    margin: auto; /* Center the content */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
+
 
 /* Header styles */
 h1, h2 {
