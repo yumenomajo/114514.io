@@ -1,0 +1,100 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Apply a more sophisticated font and background color to the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, legible font */
+    background-color: #f0f0f0; /* Softer background color for better readability */
+    color: #333;
+    line-height: 1.6; /* Improved line height for readability */
+    padding: 20px; /* Add padding to avoid content touching the edges */
+    max-width: 1200px; /* Limit the max width of the content for readability */
+    margin: auto; /* Center the content */
+}
+
+/* Header styles */
+h1, h2 {
+    text-align: center; /* Center-align headers */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+h1 {
+    color: #0366d6; /* More professional blue */
+    margin-bottom: 0.5em; /* Space out the h1 from content below */
+}
+
+h2 {
+    color: #333; /* Subdued color for sub-headers */
+}
+
+/* Paragraph styles */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+a {
+    color: #007bff; /* Bootstrap's default link color for familiarity */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover, a:focus {
+    text-decoration: underline; /* Add underline on hover/focus for better accessibility */
+    color: #0056b3; /* Darker shade of blue on hover/focus */
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #007bff; /* Bootstrap's blue for familiarity and consistency */
+    color: #ffffff;
+    padding: 10px 20px; /* Add horizontal padding */
+    text-align: center; /* Center the navigation items */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px; /* Adjust spacing */
+}
+
+nav a {
+    color: #ffffff; /* Ensure legibility against the nav background */
+    font-weight: bold; /* Make navigation items pop */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px; /* Increased padding for better visual separation */
+    margin-top: 20px; /* Space out footer from content */
+    font-size: 0.8em; /* Smaller font size for footer content */
+}
+
+/* Utility classes for margin and padding */
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.pt-20 { padding-top: 20px; }
+.pb-20 { padding-bottom: 20px; }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav li {
+        display: block; /* Stack nav items vertically on smaller screens */
+        margin: 10px 0; /* Adjust spacing for stacked items */
+    }
+}
