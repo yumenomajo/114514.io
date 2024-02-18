@@ -101,3 +101,28 @@ footer {
         margin: 10px 0; /* Adjust spacing for stacked items */
     }
 }
+
+/* 使用网格布局使内容更加有条理 */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* 添加间隔 */
+    padding: 20px;
+}
+
+/* 内容块样式 */
+section {
+    background-color: #fff; /* 背景颜色 */
+    border: 1px solid #ccc; /* 边框 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 阴影 */
+    padding: 20px; /* 内边距 */
+    border-radius: 10px; /* 圆角边框 */
+}
+
+/* 线条样式 */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0; /* 上下间距 */
+}
