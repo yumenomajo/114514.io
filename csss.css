@@ -1,16 +1,14 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
+/* 基本样式重置 */
+body, h1, h2, h3, p, ul, li, figure {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    box-sizing: border-box;
 }
 
-/* Apply a more sophisticated font and background color to the entire page */
+/* 全局样式 */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/6.jpg'); /* 添加淡化效果和背景图片 */
-    background-size: cover; /* 确保背景图片覆盖整个页面 */
-    background-position: center; /* 使背景图片居中显示 */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -18,111 +16,68 @@ body {
     margin: auto;
 }
 
-
-/* Header styles */
-h1, h2 {
-    text-align: center; /* Center-align headers */
-    padding: 20px 0; /* Add some vertical padding */
-}
-
-h1 {
-    color: #0366d6; /* More professional blue */
-    margin-bottom: 0.5em; /* Space out the h1 from content below */
-}
-
-h2 {
-    color: #333; /* Subdued color for sub-headers */
-}
-
-/* Paragraph styles */
-p {
-    line-height: 1.6;
+header, main, section {
     margin-bottom: 20px;
 }
 
-/* Link styles */
-a {
-    color: #007bff; /* Bootstrap's default link color for familiarity */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover, a:focus {
-    text-decoration: underline; /* Add underline on hover/focus for better accessibility */
-    color: #0056b3; /* Darker shade of blue on hover/focus */
-}
-
-/* Navigation menu styles */
-nav {
-    background-color: #007bff; /* Bootstrap's blue for familiarity and consistency */
-    color: #ffffff;
-    padding: 10px 20px; /* Add horizontal padding */
-    text-align: center; /* Center the navigation items */
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline;
-    margin: 0 10px; /* Adjust spacing */
-}
-
-nav a {
-    color: #ffffff; /* Ensure legibility against the nav background */
-    font-weight: bold; /* Make navigation items pop */
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
+/* 高级感布局 */
+header {
     text-align: center;
-    padding: 20px 10px; /* Increased padding for better visual separation */
-    margin-top: 20px; /* Space out footer from content */
-    font-size: 0.8em; /* Smaller font size for footer content */
+    margin-bottom: 40px;
 }
 
-/* Utility classes for margin and padding */
-.mt-20 { margin-top: 20px; }
-.mb-20 { margin-bottom: 20px; }
-.pt-20 { padding-top: 20px; }
-.pb-20 { padding-bottom: 20px; }
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    nav li {
-        display: block; /* Stack nav items vertically on smaller screens */
-        margin: 10px 0; /* Adjust spacing for stacked items */
-    }
-}
-
-/* 使用网格布局使内容更加有条理 */
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* 添加间隔 */
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
+    border-radius: 8px;
 }
 
-/* 内容块样式 */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* 图片和视频样式 */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+/* 音频播放器样式 */
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 优化段落和链接样式 */
+p, a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 调整间距和布局 */
 section {
-    background-color: #fff; /* 背景颜色 */
-    border: 1px solid #ccc; /* 边框 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 阴影 */
-    padding: 20px; /* 内边距 */
-    border-radius: 10px; /* 圆角边框 */
+    margin-bottom: 40px;
 }
 
-/* 线条样式 */
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 20px 0; /* 上下间距 */
-}
