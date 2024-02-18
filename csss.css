@@ -7,14 +7,17 @@ body, h1, h2, h3, p, ul, li, figure {
 
 /* 全局样式 */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/6.jpg'); /* 添加淡化效果和背景图片 */
+    background-size: cover; /* 确保背景图片覆盖整个页面 */
+    background-position: center; /* 使背景图片居中显示 */
     color: #333;
     line-height: 1.6;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
+
 
 header, main, section {
     margin-bottom: 20px;
